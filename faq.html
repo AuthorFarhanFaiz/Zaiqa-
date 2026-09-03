@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FAQ — Zaiqa Restaurant</title>
+<meta name="description" content="Common questions about ordering, payment, delivery and reservations at Zaiqa Restaurant." />
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.faq-item { border-bottom: 1px solid rgba(0,0,0,0.1); padding: 1.4rem 0; }
+.faq-item h3 { color: var(--maroon); font-size: 1.05rem; margin-bottom: 0.5rem; }
+.faq-item p { color: #4a413a; max-width: none; }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="/"><img src="images/logo.png" alt="Zaiqa Restaurant" class="brand-mark"><span class="brand-word">Zaiqa</span></a>
+  <nav class="main-nav" id="mainNav">
+    <a href="/#story">Our Story</a>
+    <a href="/#route">Branches</a>
+    <a href="/#menu">Menu</a>
+    <a href="/about.html">About</a>
+    <a href="/#contact" class="nav-cta">Find a Table</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="legal-page">
+  <p class="eyebrow-plain">Frequently asked</p>
+  <h1>Questions people ask us</h1>
+
+  <div class="faq-item">
+    <h3>How do I place an order online?</h3>
+    <p>Go to the <a href="/#menu">Menu</a> section, tap "+ Add" on a dish (or "+ Add another item" for anything from the printed menu), then tap the cart icon and Checkout. Fill in your details and submit.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How do I pay?</h3>
+    <p>Cash on Delivery, JazzCash, Easypaisa or Bank Transfer. For the last three, a 50% advance is required — our staff will call to confirm your total first, then you send the advance and share the reference.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Do you show prices online?</h3>
+    <p>Not yet — our printed menus (viewable on the site) have the current prices. Staff will confirm your total by phone when you order.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Can I book a hall for a wedding or birthday?</h3>
+    <p>Yes — Bahawalpur and Sadiqabad both have dedicated event halls. Message us on WhatsApp or call the branch directly to check availability.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Do you deliver?</h3>
+    <p>Delivery availability and area depend on the branch — call or WhatsApp your nearest branch to confirm.</p>
+  </div>
+  <div class="faq-item">
+    <h3>I created an account but didn't get an email — is that normal?</h3>
+    <p>Possibly, while the restaurant is finishing email setup. Your account still works — just log in with the email and password you signed up with.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How do I contact a specific branch?</h3>
+    <p>Every branch has its own page with address, phone number and a WhatsApp link — see the <a href="/#route">Branches</a> section.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Zaiqa Restaurant" class="footer-mark">
+  <p>&copy; <span id="year"></span> Zaiqa Restaurant.</p>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('navToggle').addEventListener('click', function(){ document.getElementById('mainNav').classList.toggle('open'); });
+</script>
+</body>
+</html>

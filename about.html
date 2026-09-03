@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us — Zaiqa Restaurant</title>
+<meta name="description" content="The story of Zaiqa Restaurant — from a single highway stop to five branches across Punjab and Sindh." />
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain"></div>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="/"><img src="images/logo.png" alt="Zaiqa Restaurant" class="brand-mark"><span class="brand-word">Zaiqa</span></a>
+  <nav class="main-nav" id="mainNav">
+    <a href="/#story">Our Story</a>
+    <a href="/#route">Branches</a>
+    <a href="/#menu">Menu</a>
+    <a href="/#gallery">Gallery</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/#contact" class="nav-cta">Find a Table</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="legal-page">
+  <p class="eyebrow-plain">About us</p>
+  <h1>Built for people who drive a long way to eat well.</h1>
+  <p>Zaiqa started as a single stop on the National Highway (N-5), for travellers, families and truckers who wanted a proper hot meal without leaving the road. It grew branch by branch — Bahawalpur, Sadiqabad, Daharki, Mirpur Mathelo — each one keeping the same promise: fresh food, cooked to order, served fast enough for a highway break and warm enough for a family dinner.</p>
+  <img src="images/outdoor-dining.webp" alt="Zaiqa outdoor family dining" style="border-radius:4px;margin:1.5rem 0;">
+  <h2>What stays the same at every branch</h2>
+  <p>Every branch grills its own seekh and tikka on-site, keeps a buffet line running through peak hours, and sets aside space for the weddings, birthdays and get-togethers that happen along the way. Bahawalpur and Sadiqabad each hold a dedicated banquet hall.</p>
+  <h2>Qaswa Cafe</h2>
+  <p>Alongside the Zaiqa branches, Qaswa Cafe in Sadiqabad offers a more relaxed, continental-leaning menu — pizza, pasta and shakes — for a different kind of evening out.</p>
+  <h2>Find us</h2>
+  <p>Five locations across Punjab and Sindh, all on or near the National Highway. See the full list and get directions on our <a href="/#route">branches page</a>.</p>
+</section>
+
+<footer class="site-footer">
+  <img src="images/logo.png" alt="Zaiqa Restaurant" class="footer-mark">
+  <p>&copy; <span id="year"></span> Zaiqa Restaurant.</p>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('navToggle').addEventListener('click', function(){ document.getElementById('mainNav').classList.toggle('open'); });
+</script>
+</body>
+</html>
